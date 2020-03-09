@@ -9,7 +9,7 @@ public class Parole {
 	public Parole() {
 		//TODO
 		elenco =new LinkedList<String>();
-	}
+	} 
 	
 	public void addParola(String p) {
 		//TODO

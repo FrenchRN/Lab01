@@ -47,8 +47,7 @@ public class ParoleController {
     		s=st+"\n";
     	}
     	txtResult.setText(s);
-    }
-    
+    }  
     @FXML
     void doReset(ActionEvent event) {
     	// TODO
