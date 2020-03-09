@@ -27,10 +27,10 @@ public class ParoleController {
     private URL location;
 
     @FXML // fx:id="txtParola"
-    private TextField txtParola; // Value injected by FXMLLoader
+    private java.awt.TextField txtParola; // Value injected by FXMLLoader
 
     @FXML // fx:id="txtResult"
-    private TextArea txtResult; // Value injected by FXMLLoader
+    private java.awt.TextArea txtResult; // Value injected by FXMLLoader
     
     @FXML
     private Button btnReset;
@@ -41,11 +41,18 @@ public class ParoleController {
     @FXML
     void doInsert(ActionEvent event) {
     	// TODO
+    	elenco.addParola(txtParola.getText());
+    	String s="";
+    	for(String st:elenco.getElenco()) {
+    		s=st+"\n";
+    	}
+    	txtResult.setText(s);
     }
     
     @FXML
     void doReset(ActionEvent event) {
     	// TODO
+    	elenco.reset();
     }
 
     @FXML // This method is called by the FXMLLoader when initialization is complete
