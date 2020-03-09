@@ -28,6 +28,7 @@
                </children>
             </HBox>
             <TextArea fx:id="txtResult" editable="false" prefHeight="200.0" prefWidth="200.0" wrapText="true" />
+            <TextArea fx:id="txtTempo" />
          </children>
       </VBox>
    </center>

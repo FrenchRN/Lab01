@@ -26,5 +26,11 @@ public class Parole {
 		// TODO
 		elenco.removeAll(this.elenco);
 	}
+	
+	public void cancella(String c) {
+		for(String s:elenco) {
+			if(s.equals(c)) elenco.remove(elenco.indexOf(c));
+		}
+	}
 
 }
